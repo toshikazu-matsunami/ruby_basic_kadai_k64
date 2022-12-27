@@ -19,3 +19,4 @@ if val != 0
 else
   puts '整数ではありません'
 end
+# end

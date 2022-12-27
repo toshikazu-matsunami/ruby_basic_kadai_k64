@@ -20,3 +20,4 @@ olympics.each do |olym|
   puts "豆知識: #{olym[:note]}" unless olym[:note].nil?
   puts '-------------------------------'
 end
+# end
