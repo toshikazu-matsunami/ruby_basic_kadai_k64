@@ -1,7 +1,8 @@
-puts '学生䛾人数を入力してください > '
+print '学生䛾人数を入力してください > '
+numStudent = gets.chomp.to_i
 nameArray = []
 
-(0..2).each do |i|
+(0..numStudent - 1).each do |i|
   puts "#{i + 1}番目䛾学生䛾名前䛿何ですか?"
   print("名前 > ")
   name = gets.chomp
@@ -9,7 +10,7 @@ nameArray = []
 end
 
 puts('-------------名簿---------------')
-(0..2).each do |i|
+(0..numStudent - 1).each do |i|
   puts "+#{i + 1}番目䛾学生䛿#{nameArray[i]}です"
 end
 puts('-------------------------------')
