@@ -23,5 +23,4 @@ olympics.each do |olympic|
     end
 end
 
-
 # 豆知識がある場合のみ豆知識について出力してください

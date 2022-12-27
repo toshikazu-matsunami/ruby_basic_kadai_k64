@@ -1,3 +1,4 @@
+print "数字を入力してください > "
 data_input = gets
 
 data_input = Integer data_input rescue nil;
