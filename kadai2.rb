@@ -17,18 +17,14 @@ puts "第1~10回大会のオリンピック一覧"
 olympics.each { |olympic|
     puts "--------------------"
     puts "#{olympic[:year]}年#{olympic[:city]}大会"
-    puts "#{olympic[:note]}"
+    # 豆知識がある場合のみ豆知識について出力してください
+    if(olympic[:note] != nil)
+        puts "#{olympic[:note]}"
+        end
 }
 
-# 豆知識がある場合のみ豆知識について出力してください
 
-olympics.each do |olympic|
-    if(olympic[:note] != nil)
-    puts "--------------------"
-    puts "#{olympic[:year]}年#{olympic[:city]}大会"
-    puts "#{olympic[:note]}"
-    end
-end
+
 
 
 
