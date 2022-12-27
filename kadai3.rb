@@ -14,3 +14,5 @@ elsif data_input%7 == 0 && data_input %2 == 0
 else
     puts "2䛾倍数でも7䛾倍数でもありません"
 end
+
+
