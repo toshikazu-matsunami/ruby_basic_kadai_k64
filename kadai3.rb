@@ -3,8 +3,6 @@ number = gets
 
 number = number.to_i
 
-puts("代入した: #{number}")
-
 if (number%7 == 0)
     if ((number%2 == 0))
         puts("14の倍数です")
