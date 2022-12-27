@@ -1,4 +1,4 @@
-print '学生数を設定してください > '
+print '学生の人数を入力してください > '
 num = gets.chomp.to_i
 
 list_students = []
