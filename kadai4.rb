@@ -7,7 +7,7 @@ loop do
     i += 1
     puts "$ #{i}番目䛾学生䛾名前䛿何ですか?"
     print "$ 名前 >"
-    name = gets
+    name = gets.chomp
     a.push(name)
     if i == count
         break
