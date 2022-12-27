@@ -1,4 +1,4 @@
-puts '数字を入力してください >'
+print '数字を入力してください > '
 input = gets
 input = input.chomp
 num = input.to_i
