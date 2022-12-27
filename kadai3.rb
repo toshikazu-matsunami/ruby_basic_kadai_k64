@@ -10,7 +10,7 @@ if number
   elsif number % 7 == 0
     puts "7の倍数です"
   else
-    puts "2䛾倍数でも7䛾倍数でもありません"
+    puts "2の倍数でも7の倍数でもありません"
   end
 else
   puts "整数ではありません"

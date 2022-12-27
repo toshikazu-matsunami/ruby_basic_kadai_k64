@@ -1,4 +1,4 @@
-print "学生䛾人数を入力してください "
+print "学生の人数を入力してください "
 
 number = Integer(gets) rescue false
 
@@ -6,7 +6,7 @@ i = 0;
 students = []
 
 until i == number do
-    puts "#{i+1}番目䛾学生䛾名前䛿何ですか? "
+    puts "#{i+1}番目の学生の名前は何ですか? "
     print "名前 "
     students.push(gets.chomp)
     i+= 1
