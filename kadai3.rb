@@ -12,3 +12,5 @@ elsif num % 2 != 0 && num % 7 != 0
 else
   puts "整数ではありません"
 end
+
+#End of file

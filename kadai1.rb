@@ -12,3 +12,5 @@ elsif (year - 1896) % 4 == 0
 else
   puts "#{year}年は夏季オリンピックイヤーではありません"
 end
+
+#End of file

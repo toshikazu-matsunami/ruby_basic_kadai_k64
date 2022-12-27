@@ -20,3 +20,5 @@ olympics.each do |idx|
   puts "豆知識: #{idx[:note]}" unless idx[:note].nil?
   puts '-------------------------------'
 end
+
+#End of file
