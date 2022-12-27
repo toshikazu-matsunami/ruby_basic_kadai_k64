@@ -1,6 +1,7 @@
 print "好きな数字で代入してください: "
-value = gets.to_i
-if value.integer?
+value = gets
+if value =~/^[0-9]+$/
+  value = value.to_i
   if value % 2 == 0 && value % 7 == 0
       puts "14の倍数です"
   elsif value % 2 == 0
