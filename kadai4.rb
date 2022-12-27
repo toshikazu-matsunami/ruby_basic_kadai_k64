@@ -3,10 +3,11 @@ num = gets.chomp.to_i
 
 students = []
 
-num.times do
-  print "1番目䛾学生䛾名前䛿何ですか?\n"
+num.times do |index|
+  print "#{index + 1}番目䛾学生䛾名前䛿何ですか?\n"
   print '名前 > '
   name = gets.chomp
+
   students << name
 end
 
