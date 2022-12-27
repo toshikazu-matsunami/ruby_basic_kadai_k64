@@ -1,3 +1,4 @@
+puts "Pham_Van_Uy-20194716"
 olympics = [
  {year: 1896, city: "アテネ"},
  {year: 1900, city: "パリ"},
