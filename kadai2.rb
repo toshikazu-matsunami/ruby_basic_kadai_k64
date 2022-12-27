@@ -20,7 +20,7 @@ olympics.each do |idx|
   if idx[:note] != nil
     puts "豆知識: #{idx[:note]}"
   end
-  puts "-------------------------------"
+  puts "--------------------------------"
 end
 
 

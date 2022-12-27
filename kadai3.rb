@@ -1,4 +1,4 @@
-print "数字を入力してください >"
+print "数字を入力してください > "
 
 val = gets.chomp.to_i
 
