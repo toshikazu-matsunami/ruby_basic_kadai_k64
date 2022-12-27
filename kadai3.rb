@@ -1,6 +1,5 @@
 print '数字を入力してください > '
-input = gets
-input = input.chomp
+input = gets.chomp
 num = input.to_i
 if num.to_s != input
   puts '整数ではありません'
