@@ -1,9 +1,9 @@
 print '学生䛾人数を入力してください >'
-num = gets.chomp.to_i
+number = gets.chomp.to_i
 
 list_student = []
 
-(1..num).each do |i|
+(1..number).each do |i|
   puts "#{i}番目の学生の名前は何ですか?"
   print '名前 > '
   name = gets.chomp
