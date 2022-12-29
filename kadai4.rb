@@ -1,6 +1,5 @@
 print '学生䛾人数を入力してください >'
-number = gets.chomp.to_i
-
+number = gets.to_i
 list_student = []
 
 (1..number).each do |i|
