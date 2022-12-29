@@ -14,7 +14,13 @@ olympics = [
 puts "第1~10回大会のオリンピック一覧"
 
 # each文を用いて、オリンピックの情報を出力してください
-
+olympics.each{|o| 
+  print "---------------------\n"
+  print "#{o[:year]}年#{o[:city]}大会\n"
+  if o.key?(:note)
+    print "#{o[:note]}\n"
+  end
+}
 
 
 # 豆知識がある場合のみ豆知識について出力してください
