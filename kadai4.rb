@@ -8,6 +8,7 @@ list_student = []
   print '名前 > '
   name = gets.chomp
   list_student << name
+  
 end
 puts '--------------名簿----------------'
 list_student.each_with_index do |student, index|
