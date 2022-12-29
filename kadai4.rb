@@ -11,3 +11,5 @@ list_student.each_with_index do |student, index|
   puts "+ #{index + 1}番目䛾学生䛿#{student}です"
 end
 puts '-------------------------------------------'
+
+
