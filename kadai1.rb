@@ -5,7 +5,7 @@ year = gets.to_i
 if  year < 1986
     puts "#{year}年は夏季オリンピックはまだありません"
 elsif   year%4 == 0 
-    if  year == 1916 && year == 1940 && year == 1944 && year == 2020
+    if  year == 1916 || year == 1940 || year == 1944 || year == 2020
         puts "#{year}年は世界情勢の影響により夏季オリンピックが開催されませんでした"
     else 
         puts "#{year}年は夏季オリンピックが開催されました"
