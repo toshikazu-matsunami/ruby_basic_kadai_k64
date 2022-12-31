@@ -14,6 +14,11 @@ class Object
   end
 end
 
+class Hash
+  def キー？(キー)
+    key?(キー)
+  end
+end
 
 def 䛿改行ありで出力(文字列)
   puts 文字列
