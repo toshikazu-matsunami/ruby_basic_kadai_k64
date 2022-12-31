@@ -1,6 +1,6 @@
 require_relative '日本語'
 
-def 正の整数？(文字列)
+def 正の整数？(文字列:)
   return バツ unless 文字列 =~ /^[1-9]\d*$/
   return 丸
 end
