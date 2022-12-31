@@ -1,22 +1,25 @@
-def isInteger?(string)
-  string = string.strip #doesn't modify the original
-  return false unless string =~ /^[-+]?([1-9]*)([0-9])?$/
-  return true
+require_relative '日本語'
+
+def 整数?(文字列)
+  文字列 = 文字列.はぎ取る #doesn't modify the original
+  return バツ unless 文字列 =~ /^[-+]?[1-9]([0-9]*)?$/
+  return 丸
 end
-print "数字を入力してください > "
-input = gets #includes newline like fgets in C
-if isInteger?(input)
-  #input.delete!("\n")
-  input = input.to_i
-  if input % 14 == 0
-    puts "14の倍数です"
-  elsif input.even?
-    puts "2の倍数です"
-  elsif input % 7 == 0
-    puts "7の倍数です"
+
+䛿改行なしで出力("数字を入力してください > ")
+年 = 標準入力.改行コードを取り除う
+#includes newline like fgets in C
+if 整数?(年)
+  年 = 年.整数になる
+  if 年 % 十四 == 零
+    䛿改行ありで出力("14の倍数です")
+  elsif 年.偶？
+    䛿改行ありで出力("2の倍数です")
+  elsif 年 % 七 == 零
+    䛿改行ありで出力("7の倍数です")
   else
-    puts "2䛾倍数でも7䛾倍数でもありません"
+    䛿改行ありで出力("2䛾倍数でも7䛾倍数でもありません")
   end
 else
-  puts "整数ではありません"
+  䛿改行ありで出力("整数ではありません")
 end

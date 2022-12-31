@@ -1,3 +1,5 @@
+require_relative '日本語'
+
 olympics = [
  {year: 1896, city: "アテネ"},
  {year: 1900, city: "パリ"},

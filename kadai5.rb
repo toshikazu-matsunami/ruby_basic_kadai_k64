@@ -1,32 +1,30 @@
-def isInteger?(string)
-  string = string.strip
-  return false unless string =~ /^[1-9]\d*$/
-  return true
+require_relative '日本語'
+
+def 自然数?(文字列)
+  return バツ unless 文字列 =~ /^[1-9]\d*$/
+  return 丸
 end
 
-print "学生䛾人数を入力してください > "
-size = gets
-size.delete!("\n")
-if !isInteger?(size)
-  Kernel.abort("自然数ではありません")
+䛿改行なしで出力("学生の人数を入力してください > ")
+量 = 標準入力.改行コードを取り除う
+if !自然数?(量)
+  カーネル.打ち切る("自然数ではありません")
 end
-  size = size.to_i
-  if size <= 0
-    Kernel.abort("自然数ではありません")
+  量 = 量.整数になる
+  if 量 == 零
+    カーネル.打ち切る("自然数ではありません")
   end
-    students = []
-    (1..size).each{|i|
-      print "#{i}番目の学生の名前は何ですか?\n名前 > "
-      name = gets
-      name.delete!("\n")
-      print "#{i}番目の学籍番号は何ですか?\n学籍番号 > "
-      id = gets
-      id.delete!("\n")
-      id = id.to_i
-      students << { id: id , name: name  }
+    学生 = []
+    (一..量).each{|物|
+      䛿改行なしで出力("#{物}番目の学生の名前は何ですか?\n名前 > ")
+      名前 = 標準入力.改行コードを取り除う
+      䛿改行なしで出力("#{物}番目の学籍番号は何ですか?\n学籍番号 > ")
+      アイディ = 標準入力.改行コードを取り除う
+      アイディ = アイディ.整数になる
+      学生 << { アイディ: アイディ , 名前: 名前  }
     }
-    puts "-------------名簿---------------"
-    (1..size).each{|i|
-      puts "学籍番号 #{students[i-1][:id]} - 名前 #{students[i-1][:name]}"
+    䛿改行ありで出力("-------------名簿---------------")
+    (一..量).each{|物|
+      䛿改行ありで出力("学籍番号 #{学生[物 - 一][:アイディ]} - 名前 #{学生[物 - 一][:名前]}")
     }
-    puts "-------------------------------"
+    䛿改行ありで出力("-------------------------------")
