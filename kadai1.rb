@@ -7,10 +7,16 @@ if year <= 1895 # 条件①
   puts "#{year}年にオリンピックはまだありません"
 elsif special_year.include?(year) # 条件②
   # 該当の結果を出力してください
+#<<<<<<< main
   puts "#{year}年にオリンピック䛿開催されませんでした"
 elsif year == 2021
   puts 'コロナ䛾せいで1年遅れで2021年に開催されました'
 elsif (year % 4).zero? # 条件③
+#=======
+elsif # 条件③ 
+  # 該当の結果を出力してください
+elsif # 条件④ 
+#>>>>>>> main
   puts "#{year}年は夏季オリンピックが開催されました"
 else
   puts "#{year}年は夏季オリンピックイヤーではありません"
