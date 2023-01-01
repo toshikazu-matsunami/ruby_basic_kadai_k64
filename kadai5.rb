@@ -8,7 +8,7 @@ class Student
 end
 
 
-class StudentRoster
+class Students
   attr_accessor :students
 
   def initialize(students)
@@ -18,7 +18,7 @@ class StudentRoster
 
   def print_student
     @students.each do |student|
-      puts "学生番号 #{student.student_id}\n名前 #{student.name}"
+      puts "学生番号 #{student.student_id}-名前 #{student.name}"
     end
   end
 end
@@ -39,7 +39,7 @@ if __FILE__ == $PROGRAM_NAME
     students << Student.new(name, student_id)
   end
   puts "-------------名簿---------------"
-  roster = StudentRoster.new(students)
+  roster = Students.new(students)
   roster.print_student
   puts "--------------------------------"
 end
