@@ -18,7 +18,7 @@ class Students
 
   def print_student
     @students.each do |student|
-      puts "学生番号 #{student.student_id}-名前 #{student.name}"
+      puts "学生番号 #{student.student_id} - 名前 #{student.name}"
     end
   end
 end
