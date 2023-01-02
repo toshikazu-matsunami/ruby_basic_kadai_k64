@@ -2,7 +2,7 @@ print "学生䛾人数を入力してください > "
 num = gets.chomp.to_i
 names = Array.new()
 for i in 1..num do
-  puts "#{i}番目䛾学生䛾名前䛿何ですか?"
+  puts "#{i}番目の学生の名前は何ですか?"
   print "名前 > "
   names.push(gets.chomp)
 end
