@@ -5,7 +5,7 @@ list_students = []
 
 (1..num).each do |i|
   puts "#{i}番目の学生の名前は何ですか?"
-  print '名前 > '
+  print '名前: '
   name = gets.chomp
   list_students << name
 end
