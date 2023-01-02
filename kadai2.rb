@@ -32,5 +32,4 @@ olympics.each do |olympic|
 end
 
 
-
   
