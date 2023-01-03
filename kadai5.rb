@@ -1,19 +1,21 @@
-# input number of student
+# input the number of student
 print "学生の人数を入力してください > "
 n = gets.to_i
 
-# input student's name
+# input student's name & id
 students = [*1..n].map do |student|
   puts "#{student}番目の学生の名前は何ですか？"
   print "名前 > "
-  student = gets.chomp
+  name = gets.chomp
+  puts "#{student}番目䛾学籍番号䛿何ですか？"
+  print "学籍番号 > "
+  id = gets.chomp
+  student = {name: name, id: id}
 end
 
-# print student name list
+# print student list
 puts "-------------名簿---------------"
-index = 1
 students.each do |student|
-  puts "+ #{index}番目の学生は#{student}です"
-  index = index + 1
+  puts "学籍番号 #{student[:id]} - 名前 #{student[:name]}"
 end
 puts "-------------------------------"
