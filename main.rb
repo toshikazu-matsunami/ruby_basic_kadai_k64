@@ -111,4 +111,5 @@ users = [
 #eachの中でハッシュの値を使う場合
 users.each do |user|
 puts user[:name]
+puts "end"
 end
