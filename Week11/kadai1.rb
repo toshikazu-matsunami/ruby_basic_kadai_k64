@@ -12,7 +12,6 @@ elsif [1916, 1940, 1944, 2020].include? year
 elsif year == 2021
   puts "コロナ䛾せいで1年遅れで2021年に開催されました"
 elsif (year - start_year) % 4
-  # 該当の結果を出力してください
   puts "#{year}年は夏季オリンピックが開催されました"
 else
   puts "#{year}年は夏季オリンピックイヤーではありません"
