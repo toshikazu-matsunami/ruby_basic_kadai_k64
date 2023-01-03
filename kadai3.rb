@@ -1,10 +1,7 @@
-y = gets
-x = y.to_i
+x = gets
 # 以下の条件分岐に、新しい条件を追加してください
-puts y
-puts x
-puts x.to_s
-if (x.to_s) == y
+if x =~ /^[0-9]+$/
+  x = x.to_i
   if x % 14 == 0
     puts "#{x}:14の倍数です"
   elsif x.even?
