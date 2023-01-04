@@ -45,7 +45,7 @@ def input_list_students
     i = 1
     loop do
         puts "#{i}番目の学生の名前は何ですか?"
-        print "名前 > "
+        print "名前   > "
         name = gets.chomp
         puts "#{i}番目の学生の学籍番号は何ですか?"
         print "学籍番号 > "
