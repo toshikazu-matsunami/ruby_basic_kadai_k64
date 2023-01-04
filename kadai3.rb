@@ -1,3 +1,4 @@
+
 print "好きな数字で代入してください: "
 value = gets
 if value =~/^[0-9]+$/
