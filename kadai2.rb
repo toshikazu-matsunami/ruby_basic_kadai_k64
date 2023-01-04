@@ -12,7 +12,6 @@ olympics = [
 ]
 
 puts "第1~10回大会のオリンピック一覧"
-
 # each文を用いて、オリンピックの情報を出力してください
 olympics.each do |olympic|
   puts "------------------"
