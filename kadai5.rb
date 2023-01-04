@@ -18,3 +18,4 @@ array.each_with_index do |student|
   puts "学籍番号 #{student['stu_id']} - 名前 #{student['name']}"
 end
 puts "-------------------------------"
+
