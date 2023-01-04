@@ -1,3 +1,4 @@
+
 print "学生数を代入してください >"
 n = gets.chomp.to_i
 i = 0
