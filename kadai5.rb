@@ -6,6 +6,8 @@ student_num.times do |i|
   puts "#{i + 1}番目の学生の名前は何ですか?"
   print '名前 > '
   name = gets.chomp
+  
+  
   name_list.push(name)
   puts "#{i + 1}番目の学籍番号は何ですか?"
   print '学籍番号 > '
