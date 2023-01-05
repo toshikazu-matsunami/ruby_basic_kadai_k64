@@ -1,3 +1,4 @@
+
 print '学生の人数を入力してください > '
 student_num = gets.to_i
 name_list = []
@@ -19,4 +20,4 @@ puts '-------------名簿---------------'
 name_list.each_with_index do |name, i|
   puts "学籍番号 #{student_codes[i]} - 名前 #{name}"
 end
-puts '------------------------------'
+puts '--------------__----------------'
